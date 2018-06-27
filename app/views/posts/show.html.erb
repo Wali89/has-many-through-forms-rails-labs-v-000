@@ -37,10 +37,10 @@
 
   <b> Create new user:</b>
    <label>Username:</label>
-   <input type="text" name="comment[user_attributes][:username]">
+   <input type="text" name="comment[user_attributes][username]">
 
    <label>Email:</label>
-   <input type="text" name="comment[user_attributes][:email]">
+   <input type="text" name="comment[user_attributes][email]">
    <input type="hidden" name="comment[post_id]" value="<%= @post.id %>">
   <%= f.submit %>
 </fieldset>
