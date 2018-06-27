@@ -8,7 +8,7 @@
 
 <p><%= @post.content %> </p>
 <h3>Categories:</h3>
-<ul><% @post.categories.each do |c| %> 
+<ul><% @post.categories.each do |c| %>
   <%= link_to c.name, category_path(c) %>
 <% end %>
 </ul>
@@ -38,13 +38,10 @@
   <b> Create new user:</b>
    <label>Username:</label>
    <input type="text" name="user_attributes[:username]">
-   
+
    <label>Email:</label>
    <input type="text" name="user_attributes[:email]">
 
   <%= f.submit %>
 </fieldset>
 <% end %>
-
-
-
