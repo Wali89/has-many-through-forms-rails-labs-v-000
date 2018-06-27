@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
 
 
   def create
-    byebug
     @comment = Comment.create(comment_params)
     redirect_to post_path(@comment.post)
   end
