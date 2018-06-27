@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
-
+  
 
   def create
+    byebug
     @comment = Comment.create(comment_params)
     @user = User.create()
 
