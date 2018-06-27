@@ -4,8 +4,7 @@ class CommentsController < ApplicationController
   def create
     byebug
     @comment = Comment.create(comment_params)
-    @user = User.create(user_attributes)
-
+    redirect_to post_path(@comment.post)
   end
 
   private
